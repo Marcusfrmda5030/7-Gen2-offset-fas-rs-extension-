@@ -56,7 +56,7 @@ function load_fas(pid, pkg)
     then
         set_ignore_policy(7, true)
         set_extra_policy_rel(0, 4, -200000, 0)
-        set_extra_policy_abs(7, 2700000, 2800000)
+        set_extra_policy_abs(7, 2300000, 2500000)
     end
 end
 
