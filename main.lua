@@ -52,11 +52,14 @@ function load_fas(pid, pkg)
     elseif (pkg == "com.tencent.tmgp.dfm")
     then
         set_extra_policy_rel(4, 7, -300000, -150000)    
-    elseif (pkg == "com.mobile.legends")
-    then
-        set_ignore_policy(7, true)
-        set_extra_policy_rel(0, 4, -200000, 0)
-        set_extra_policy_abs(7, 2300000, 2500000)
+    elseif (pkg == "com.mobile.legends") then
+    set_ignore_policy(7, true)
+    set_ignore_policy(0, true)
+    set_ignore_policy(4, true)
+    set_extra_policy_abs(7, 1800000, 2100000)
+    set_extra_policy_rel(0, 4, -100000, -50000)
+    set_extra_policy_rel(4, 7, -100000, -50000) 
+        
     end
 end
 
